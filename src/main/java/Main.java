@@ -33,7 +33,6 @@ public class Main {
             UserDetail userDetails = new UserDetail("Belaruss", "Minskk", tb);
             User user = new User("Bob111`", "Dou1111", "asdasdasd@mail.com.by", "passwordstub", "saltstub",
                     new Timestamp(System.currentTimeMillis()), userDetails);
-
             session.save(user);
 
             session.getTransaction().commit();

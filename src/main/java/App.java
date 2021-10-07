@@ -28,7 +28,7 @@ public class App {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException, ParseException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/jd2_hib_v2?serverTimezone=Europe/Minsk", "root",
+        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/jd2_hib_v2?useSSL=false", "root",
                 "root");
 
         JdbcPreparedStatement psUsersDetails = (JdbcPreparedStatement) con.prepareStatement(INSERT_USER_DATA_INTO_USER_DELATILS, Statement.RETURN_GENERATED_KEYS);
